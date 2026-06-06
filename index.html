@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <title>Biblioteca Islámica</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 50px; background-color: #f4f4f9; }
-        h1 { color: #2c3e50; text-align: center; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2d5a27; text-align: center; }
+        .categoria { margin-top: 30px; background: #f9f9f9; padding: 15px; border-radius: 8px; }
+        .categoria h2 { color: #333; border-bottom: 2px solid #2d5a27; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 10px 0; }
+        a { text-decoration: none; color: #007bff; font-weight: bold; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenidos a mi Biblioteca Islámica</h1>
-        <p>Esta es mi página web personal. Pronto añadiré aquí mis libros y recursos.</p>
+    <h1>Biblioteca Islámica</h1>
+    
+    <div class="categoria">
+        <h2>Ciencias del Corán</h2>
+        <ul>
+            <li><a href="libros/tafsir_ejemplo.pdf">Tafsir del Noble Corán (Ejemplo)</a></li>
+        </ul>
+    </div>
+
+    <div class="categoria">
+        <h2>Hadith y Sunnah</h2>
+        <ul>
+            <li><a href="libros/sahih_bukhari.pdf">Sahih al-Bujari</a></li>
+        </ul>
     </div>
 </body>
 </html>
