@@ -4,31 +4,60 @@
     <meta charset="UTF-8">
     <title>Biblioteca Islámica</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #2d5a27; text-align: center; }
-        .categoria { margin-top: 30px; background: #f9f9f9; padding: 15px; border-radius: 8px; }
-        .categoria h2 { color: #333; border-bottom: 2px solid #2d5a27; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 10px 0; }
-        a { text-decoration: none; color: #007bff; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        body { font-family: 'Segoe UI', sans-serif; text-align: center; background-color: #f0f4f0; }
+        .header { margin-top: 50px; }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #8da399;
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 200px;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+            display: block;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #728a7f;
+        }
+
+        .card h2 { margin-top: 15px; font-size: 1.2rem; }
+        .card img { width: 50px; height: 50px; border-radius: 50%; }
     </style>
 </head>
 <body>
-    <h1>Biblioteca Islámica</h1>
-    
-    <div class="categoria">
-        <h2>Ciencias del Corán</h2>
-        <ul>
-            <li><a href="libros/tafsir_ejemplo.pdf">Tafsir del Noble Corán (Ejemplo)</a></li>
-        </ul>
+
+    <div class="header">
+        <h1>Islamic Library</h1>
+        <p>مكتبة إسلامية</p>
     </div>
 
-    <div class="categoria">
-        <h2>Hadith y Sunnah</h2>
-        <ul>
-            <li><a href="libros/sahih_bukhari.pdf">Sahih al-Bujari</a></li>
-        </ul>
+    <div class="container">
+        <!-- Tarjeta que redirige a Discord -->
+        <a href="https://discord.gg/fg6HFux9PH" class="card">
+            <img src="img/logo.jpg" alt="Logo">
+            <h2>DISCORD</h2>
+        </a>
+
+        <!-- Otras tarjetas (puedes añadir más aquí) -->
+        <a href="knowledge.html" class="card">
+            <h2>KNOWLEDGE</h2>
+        </a>
+
+        <a href="content.html" class="card">
+            <h2>CONTENT</h2>
+        </a>
     </div>
+
 </body>
 </html>
